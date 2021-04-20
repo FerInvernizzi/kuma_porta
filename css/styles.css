@@ -1,20 +1,28 @@
 body {
     display: block;
     margin: 0px;
+    overflow-x: hidden;
+
 }
 
 .fatherContainer{
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
   background-color: #1A2021;
   padding-top: 24px;
 }
 
 .headerContainer{
   background-color: #151820;
+  margin-top: 69px;
   height: 8%;
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .secction{
@@ -38,26 +46,61 @@ body {
 
 .oneSecction .logo-top{
   position: absolute;
-  width: 245.3px;
-  height: 158.96px;
+  width: 230.3px;
+  height: 155.96px;
   top: 1%;
 }
 
 .oneSecction .logo-bottom{
-  width: 457.42px;
+  width: 380.42px;
   position: absolute;
   top: 14%;
-  height: 91.48px;
+  height: 87.48px;
   transform: rotate(0.33deg);
+  margin-top: 22px;
 }
 
 .secction .text{
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 34px;
   color: #FDFBFB;
   margin: 0px;
   text-align: center;
+}
+
+.fant_simp{
+  height: 122.14px;
+  width: 192.41px;
+  transform: rotate(-89.04deg);
+  margin-right: -30px;
+}
+
+.fant_cont_me{
+  height: 133.69px;
+  width: 103.09px;
+  transform: rotate(-169.94deg) scaleX(-1);
+  margin-right: 70px;
+}
+
+#carouselExampleControls{
+  margin-top: 50px;
+  justify-content: center;
+  width: 1100px !important;
+  height: 900 !important;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../images/pinturas/fIz.svg");
+}
+
+.carousel-control-next-icon {
+  background-image: url("../images/pinturas/fDe.svg");
 }
