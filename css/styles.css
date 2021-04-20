@@ -1,0 +1,63 @@
+body {
+    display: block;
+    margin: 0px;
+}
+
+.fatherContainer{
+  height: 100vh;
+  width: 100%;
+  background-color: #1A2021;
+  padding-top: 24px;
+}
+
+.headerContainer{
+  background-color: #151820;
+  height: 8%;
+  display: flex;
+  width: 100%;
+}
+
+.secction{
+  width: 15%;
+  padding: 0px 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.oneSecction{
+  width: 25%;
+  padding: 0px 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneSecction .logo-top{
+  position: absolute;
+  width: 245.3px;
+  height: 158.96px;
+  top: 1%;
+}
+
+.oneSecction .logo-bottom{
+  width: 457.42px;
+  position: absolute;
+  top: 14%;
+  height: 91.48px;
+  transform: rotate(0.33deg);
+}
+
+.secction .text{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FDFBFB;
+  margin: 0px;
+  text-align: center;
+}
