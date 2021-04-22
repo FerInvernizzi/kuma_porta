@@ -6,13 +6,11 @@ body {
 }
 
 .fatherContainer{
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   display: flex;
-  flex-flow: wrap;
-  align-items: center;
-  justify-content: center;
-  background-color: #1A2021;
+  flex-wrap: wrap;
+  background-color: rgba(26, 32, 33, 0.93);
   padding-top: 24px;
 }
 
@@ -20,6 +18,7 @@ body {
   background-color: #151820;
   margin-top: 69px;
   height: 8%;
+  max-height: 54px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -82,25 +81,64 @@ body {
   height: 133.69px;
   width: 103.09px;
   transform: rotate(-169.94deg) scaleX(-1);
-  margin-right: 70px;
+  margin-right: 42px;
 }
 
-#carouselExampleControls{
-  margin-top: 50px;
+.outer-container-carousel{
+  width: 100%;
+  height: 900;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
   justify-content: center;
-  width: 1100px !important;
-  height: 900 !important;
+  align-self: center;
+}
+
+.obra-slider{
+  height: 600px;
+  max-width: 500px;
+}
+
+/* Overrides a bootstrap */
+
+a{
+  color: none;
+  text-decoration: none;
+}
+
+#presentacion{
+  width: 600px !important;
+  /*background-image: url("/images/Linea1_Intro.svg");*/
 }
 
 .carousel-control-next, .carousel-control-prev{
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  opacity: 0.6;
 }
 
 .carousel-control-prev-icon {
-  background-image: url("../images/pinturas/fIz.svg");
+  background-image: url("../images/pinturas/slider/fIz.svg");
+  height: 30px;
+  width: 50px;
 }
 
 .carousel-control-next-icon {
-  background-image: url("../images/pinturas/fDe.svg");
+  background-image: url("../images/pinturas/slider/fDe.svg");
+  height: 30px;
+  width: 50px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  opacity: 1;
+}
+
+.carousel-item{
+  transition: 0.3s all ease-in;
 }
